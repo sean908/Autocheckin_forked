@@ -279,7 +279,8 @@ ssp_autochenkin() {
 					# checkin_log_text="> - 签到状态: **签到失败, 请检查是否存在签到验证码**\n"
 				fi
 
-				result_log_text="${domain_text}: ${login_log_text}${checkin_log_text}${user_log_text}\n\n"
+				result_log_text="${domain_context}: ${login_log_text}${checkin_log_text}${user_log_text}\n\n"
+				## result_log_text="${domain_text}: ${login_log_text}${checkin_log_text}${user_log_text}\n\n"
 			else
 
 				result_log_text="${login_log_text}机场登录失败, 请检查配置**\n\n"
